@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+long sum_of_squares(int N) {
+    long sum = 0;
+
+    for(int i = 1; i <= N; ++i) {
+        sum += i * i;
+    }
+    return sum;
+}
+
+long square_of_sum(int N) {
+    long sum = 0;
+    for (int i = 1; i <= N; ++i) {
+        sum += i;
+    }
+    return sum * sum;
+}
+
+long absolute_difference(int N) {
+    return square_of_sum(N) - sum_of_squares(N);
+}
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        long result = absolute_difference(N);
+
+        cout << result << endl;
+    }
+
+    return 0;
+}
