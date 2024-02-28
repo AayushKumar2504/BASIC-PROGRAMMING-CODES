@@ -1,2 +1,2 @@
-# C-PLUS-PLUS
-Basic CPP codes
+# PROGRAMS
+Basic Programming Codes
