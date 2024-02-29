@@ -30,7 +30,6 @@ int main(){
         cout<<"The value of marks "<<i<<" is "<<marks[i]<<endl;
     }
 
-    // Quick quiz: do the same using while and do-while loops?
 
     // Pointers and arrays
     int* p = marks;
